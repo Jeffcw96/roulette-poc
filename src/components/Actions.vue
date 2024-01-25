@@ -1,7 +1,11 @@
 <script setup>
 const emit = defineEmits(["startRolling"]);
+const props = defineProps(["isAnimationRunning"]);
+
 const startRolling = () => {
-  emit("startRolling");
+  if (!props.isAnimationRunning) {
+    emit("startRolling");
+  }
 };
 </script>
 

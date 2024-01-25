@@ -22,7 +22,10 @@ const isProcessFinished = () => {
         @isProcessFinished="isProcessFinished"
       />
       <BetTable :isAnimationRunning="isAnimationRunning" />
-      <Actions @startRolling="startRolling" />
+      <Actions
+        @startRolling="startRolling"
+        :isAnimationRunning="isAnimationRunning"
+      />
     </div>
   </main>
 </template>

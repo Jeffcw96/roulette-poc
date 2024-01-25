@@ -79,7 +79,7 @@ watch(
 .wheel {
   animation: rotate 3s infinite linear;
   max-height: 45vh;
-  max-width: 70%;
+  max-width: 50%;
   animation-play-state: paused;
 }
 
@@ -102,6 +102,9 @@ watch(
 }
 
 @media only screen and (min-width: 650px) {
+  .wheel {
+    max-width: 70%;
+  }
   .wheel-container {
     transform: translate(0, 0) !important;
   }
